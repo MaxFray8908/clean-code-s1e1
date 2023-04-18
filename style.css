@@ -34,7 +34,7 @@ body {
   margin: 0 auto 0;
 }
 
-.input__text,
+.item__text,
 .input_type_text {
   width: 56%;
   display: inline-block;
@@ -132,7 +132,7 @@ li > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > .input__text {
+li > .item__text {
   margin: 0;
   padding-left: 10px;
   box-sizing: border-box;
@@ -155,7 +155,7 @@ button.button_delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks .input__text {
+ul.list_completed .item__text {
   text-decoration: line-through;
   color: #888;
 }
@@ -170,6 +170,6 @@ ul li.list__item_edit input[type=text] {
   width: 224px;
 }
 
-ul li.list__item_edit .input__text {
+ul li.list__item_edit .item__text {
   display: none;
 }

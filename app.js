@@ -11,7 +11,7 @@
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.querySelector(".list_todo");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var completedTasksHolder=document.querySelector(".list_completed");//completed-tasks
 
 
 //New task list item
@@ -33,7 +33,7 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='input__text';
+    label.className='item__text';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -84,7 +84,7 @@ var editTask=function(){
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector(".input__text");
+    var label=listItem.querySelector(".item__text");
     var editBtn=listItem.querySelector(".button_edit");
     var containsClass=listItem.classList.contains("list__item_edit");
     //If class of the parent is .editmode
